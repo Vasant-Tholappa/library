@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            My Library
+        </title>
+
+        <script src="script.js" defer></script>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+       <button data-modal-target="#pop">Add Book</button>
+
+       <div class="popUp" id="pop">
+           <div class="header">
+               Enter Book Details
+           </div>
+           <div class ="info">
+               <div class="title">
+                <input type="text" id="title" placeholder="TITLE">
+               </div>
+               <div class="author">
+                <input type="text" id="author" placeholder="AUTHOR">
+               </div>
+               <div class="pages">
+                <input type="number" id="pages" placeholder="PAGES">
+               </div>
+               <div class="submit">
+                <button data-close-button type="submit" class="sub">SUBMIT</button>
+               </div> 
+           </div>
+       </div>
+
+       <div id="overlay">
+
+       </div>
+
+    </body>
+</html>
